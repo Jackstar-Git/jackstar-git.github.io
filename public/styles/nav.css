@@ -1,0 +1,46 @@
+@import url(root.css);
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg);
+}
+
+#nav-base{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 80%;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+#nav-logo{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo{
+    margin-right: 20px;
+}
+
+#nav-logo-img{
+    height: 50px;
+}
+
+#nav-items{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-item{
+    margin-right: 20px;
+    font-size: 1.35rem;
+}
+
+.nav-item a:hover{
+    color: var(--primary);
+}

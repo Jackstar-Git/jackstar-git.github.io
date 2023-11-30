@@ -1,0 +1,109 @@
+@import url(root.css);
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/images/main-backgrounnd.jpg");
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px);
+}
+
+#header-main{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    flex-basis: 2;
+}
+
+#header-image{
+    height: 12vw;
+    max-height: 250px;
+    min-height: 100px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    margin-right: 8%;
+
+}
+
+#wave{
+    display: inline-block;
+    animation: wave 0.7s ease;
+    animation-iteration-count: 2;
+}
+
+
+#header-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 7vh;
+}
+
+.header-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4vw;
+    width: 14%;
+    height: 6vh;
+    border: 4px solid var(--primary);
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    min-width: fit-content
+}
+
+.header-button:first-of-type{
+    background-color: var(--bg-main);
+}
+
+.header-button:nth-of-type(2){
+    background-color: var(--primary);
+}
+
+.header-button:hover a{
+    color: var(--primary);
+}
+.header-button:nth-of-type(2):hover{
+    background-color: var(--bg-main);
+}
+
+
+
+
+
+
+
+
+@keyframes wave {
+    0% {
+        rotate: 0deg;
+        transform-origin: bottom right;
+    }
+    50% {
+        rotate: 70deg;
+        transform-origin: bottom right;
+    }
+    100% {
+        rotate: 0deg;
+        transform-origin: bottom right;
+    }
+    
+}
+
+
+@keyframes rotate-logo {
+    0% {rotate: 0deg;}
+    50% {rotate: 180deg;}
+    100% {rotate: 360deg;}
+    
+}
