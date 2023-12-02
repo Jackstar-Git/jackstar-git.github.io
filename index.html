@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="public/styles/header.css">
     <link rel="stylesheet" href="public/styles/about.css">
     <link rel="stylesheet" href="public/styles/responsive.css">
+    <link rel="stylesheet" href="public/styles/projects.css">
+    <link rel="stylesheet" href="public/styles/footer.css">
     <title>Portfolio</title>
 </head>
 <body>
     <nav>
-        <div id="nav-base">
+        <div id="nav-base" class="pc">
             <div id="nav-logo">
                 <a id="logo" href="index.html">
                     <img id="nav-logo-img" src="public/assets/images/Logo.png" alt="Logo">
@@ -21,8 +23,22 @@
             </div>
             <div id="nav-items">
                 <h1 class="nav-item"><a href="">Home</a></h1>
-                <h1 class="nav-item"><a href="#header-text">About me</a></h1>
+                <h1 class="nav-item"><a href="#about-me">About me</a></h1>
                 <h1 class="nav-item"><a href="">Projects</a></h1>
+                <h1 class="nav-item"><a href="">Contact</a></h1>
+            </div>
+        </div>
+        <div id="nav-base" class="mobile">
+            <div id="nav-logo">
+                <a id="logo" href="index.html">
+                    <img id="nav-logo-img" src="public/assets/images/Logo.png" alt="Logo">
+                </a>
+                <h1 id="logo-text">Jackstar</h1>
+            </div>
+            <div id="nav-items">
+                <h1 class="nav-item"><a href="">Home</a></h1>
+                <h1 class="nav-item"><a href="#about-me">About me</a></h1>
+                <h1 class="nav-item"><a href="">Mobile</a></h1>
                 <h1 class="nav-item"><a href="">Contact</a></h1>
             </div>
         </div>
@@ -42,7 +58,7 @@
     </div>
 
 </header>
-<section id="about-me" style="height: 100vh;">
+<section id="about-me">
     <div id="about-me-text">
         <h1>About Me</h1>
         <p>Hello, I'm <span class="highlight2">Jackstar</span>.</p>
@@ -64,17 +80,51 @@
                 <h3>Timezone</h3>
                 <p>GMT+1</p>
             </div>
+            <div class="skill-element">
+                <h3>Languages</h3>
+                <p>I speak German and English fluently. I also know some basic Spanish.</p>
+            </div>
         </div>
         <hr>
         <div class="skill">
             <h2>My Skills</h2>
+            <div class="skill-element">
+                <h3>MongoDB</h3>
+                <p>MongoDB is a non SQL-Database to store large amounts of data.</p>
+            </div>
+            <div class="skill-element">
+                <h3>Libraries</h3>
+                <p>I know many Python libraries, including TKInter, Numpy, Pandas and many more...</p>
+            </div>
+            <div class="skill-element">
+                <h3>APIs</h3>
+                <p>Some APIs I'm familar with are the Discord, YouTube and Twitch Api.</p>
+            </div>
         </div>
         <hr>
         <div class="skill">
-            <h2>Languages I speak</h2>
-
+            <h2>Programming Languages</h2>
+            <div class="skill-element">
+                <h3>Python</h3>
+                <p>This is the  language I'm most familar with and that I use for most of my projetcs.</p>
+            </div>
+            <div class="skill-element">
+                <h3>HTML</h3>
+                <p>Create Static Webites</p>
+            </div>
+            <div class="skill-element">
+                <h3>CSS</h3>
+                <p>Format websites to look nicer</p>
+            </div>
         </div>
         <hr>
+    </div>
+</section>
+<section id="projects" style="height: 50vh;">
+    <div id="projects-text">
+        <h1>Projects</h1>
+        <p>Here you can see some of my best projects.</p>
+        <h2 style="font-size: 7rem;">COMING SOON!</h2>
     </div>
 </section>
 

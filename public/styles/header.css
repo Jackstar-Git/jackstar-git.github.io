@@ -31,6 +31,7 @@ header{
     object-fit: contain;
     aspect-ratio: 1/1;
     margin-right: 8%;
+    animation: rotate-logo 10s infinite linear;
 
 }
 

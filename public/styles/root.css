@@ -28,6 +28,10 @@ a{
     text-decoration: none;
 }
 
+.hidden{
+    display: none !important; 
+}
+
 
 .highlight{
     color: var(--primary);

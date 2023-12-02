@@ -1,0 +1,27 @@
+@import url(root.css);
+
+#projects{
+    background-color: var(--bg-secondary);
+}
+
+#projects-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2vh;
+    font-size: 2rem;
+}
+
+#projects-text h1{
+    padding: 3vh;
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+    text-decoration-thickness: 5px;
+    text-decoration-skip-ink: none;
+}
+
+#projects-text p{
+    font-weight: bold;
+    font-size: 2rem;
+}

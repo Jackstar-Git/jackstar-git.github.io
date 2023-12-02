@@ -6,8 +6,14 @@ nav{
     background-color: var(--bg);
 }
 
-#nav-base{
+
+.pc{
     display: flex;
+}
+
+.mobile{display: none;}
+
+#nav-base{
     justify-content: space-between;
     align-items: center;
     height: 70px;

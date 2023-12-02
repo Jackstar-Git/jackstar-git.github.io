@@ -11,7 +11,7 @@
         height: auto;
     }
     .skill {
-        height: 50vh;
+        height: auto;
     }
   }
 
@@ -42,7 +42,11 @@
 }
 
 @media only screen and (max-width: 900px) {
-    #nav-base{
+    .mobile{
+        display: flex;
+    }
+
+    .pc{
         display: none;
     }
 

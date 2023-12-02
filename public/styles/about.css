@@ -31,10 +31,13 @@
 
 #skill-div{
     display: flex;
-    margin-top: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     justify-content: space-between;
     width: 80%;
     font-size: 1.5rem;
+    height: auto;
+   
 }
 
 #skill-div hr{
@@ -43,11 +46,13 @@
 
 .skill{
     display: flex;
+    flex: 1 1 0px;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 2vh;
-    height: 50vh;
     width: 100%;
+
+
 }
 
 .skill h2{
@@ -57,13 +62,16 @@
     text-decoration-thickness: 5px;
     text-decoration-skip-ink: none	;
     padding-bottom: 3vh;
+    text-align: center;
 }
 
 .skill-element{
     font-size: 1.6rem;
     padding: 2vh 30px 4vh 30px;
+    overflow-wrap: anywhere;
 }
 
 .skill-element h3{
     font-size: 1.7rem;
 }
+
