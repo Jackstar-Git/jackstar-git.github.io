@@ -28,6 +28,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    letter-spacing: -0rem;
+}
+
 .hidden{
     display: none !important; 
 }

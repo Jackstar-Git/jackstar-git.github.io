@@ -8,10 +8,6 @@
 
     #skill-div hr {
         width: 90%;
-        height: auto;
-    }
-    .skill {
-        height: auto;
     }
   }
 
@@ -42,11 +38,11 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .mobile{
+    .nav-base.mobile{
         display: flex;
     }
 
-    .pc{
+    .nav-base.pc{
         display: none;
     }
 

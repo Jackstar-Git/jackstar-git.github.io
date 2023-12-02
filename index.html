@@ -14,7 +14,7 @@
 </head>
 <body>
     <nav>
-        <div id="nav-base" class="pc">
+        <div class="pc nav-base">
             <div id="nav-logo">
                 <a id="logo" href="index.html">
                     <img id="nav-logo-img" src="public/assets/images/Logo.png" alt="Logo">
@@ -24,23 +24,30 @@
             <div id="nav-items">
                 <h1 class="nav-item"><a href="">Home</a></h1>
                 <h1 class="nav-item"><a href="#about-me">About me</a></h1>
-                <h1 class="nav-item"><a href="">Projects</a></h1>
+                <h1 class="nav-item"><a href="#projects">Projects</a></h1>
                 <h1 class="nav-item"><a href="">Contact</a></h1>
             </div>
         </div>
-        <div id="nav-base" class="mobile">
+        <div class="mobile nav-base">
+                
             <div id="nav-logo">
                 <a id="logo" href="index.html">
                     <img id="nav-logo-img" src="public/assets/images/Logo.png" alt="Logo">
                 </a>
                 <h1 id="logo-text">Jackstar</h1>
             </div>
-            <div id="nav-items">
-                <h1 class="nav-item"><a href="">Home</a></h1>
-                <h1 class="nav-item"><a href="#about-me">About me</a></h1>
-                <h1 class="nav-item"><a href="">Mobile</a></h1>
-                <h1 class="nav-item"><a href="">Contact</a></h1>
-            </div>
+            <details id="hamburger-menu">
+                <summary>
+                    <img id="hamburger-menu-icon" src="public/assets/images/hamburger-menu.png" alt="hamburger-menu">
+                </summary>
+                    <div id="mobile-nav-items">
+                        <h1 class="nav-item"><a href="">Home</a></h1>
+                        <h1 class="nav-item"><a href="#about-me">About me</a></h1>
+                        <h1 class="nav-item"><a href="#projects">Projects</a></h1>
+                        <h1 class="nav-item"><a href="">Contact</a></h1>
+                    </div>
+
+            </details>
         </div>
     </nav>
 <header>
@@ -53,16 +60,15 @@
         <img id="header-image" src="public/assets/images/python-logo.png" alt="Python Logo">
     </div>
     <div id="header-buttons">
-        <div class="header-button"><a href="">Contact me</a></div>
-        <div class="header-button"><a href="">See Projects</a></div>
+        <a class="header-button" href="#projects">See Projects</a>
+        <a class="header-button" href="#contact">Contact me</a>
+
     </div>
 
 </header>
 <section id="about-me">
-    <div id="about-me-text">
-        <h1>About Me</h1>
-        <p>Hello, I'm <span class="highlight2">Jackstar</span>.</p>
-    </div>
+    <h1>About Me</h1>
+    <p>Hello, I'm <span class="highlight2">Jackstar</span>.</p>
 
     <div id="skill-div">
         <hr>

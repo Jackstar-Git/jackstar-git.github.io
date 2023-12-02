@@ -7,27 +7,12 @@
     align-items: center;
 }
 
-#about-me-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#about-me{
+    text-align: center;
     margin-top: 2vh;
     font-size: 2rem;
 }
 
-#about-me-text h1{
-    padding: 3vh;
-    text-decoration: underline;
-    text-decoration-color: var(--secondary);
-    text-decoration-thickness: 5px;
-    text-decoration-skip-ink: none;
-}
-
-#about-me-text p{
-    font-weight: bold;
-    font-size: 2rem;
-}
 
 #skill-div{
     display: flex;
@@ -35,9 +20,7 @@
     padding-bottom: 5vh;
     justify-content: space-between;
     width: 80%;
-    font-size: 1.5rem;
-    height: auto;
-   
+    font-size: 1rem;
 }
 
 #skill-div hr{
@@ -45,14 +28,8 @@
 }
 
 .skill{
-    display: flex;
     flex: 1 1 0px;
-    flex-direction: column;
-    align-items: flex-start;
     padding-top: 2vh;
-    width: 100%;
-
-
 }
 
 .skill h2{
@@ -63,12 +40,15 @@
     text-decoration-skip-ink: none	;
     padding-bottom: 3vh;
     text-align: center;
+    font-size: 2.2rem;
 }
 
 .skill-element{
     font-size: 1.6rem;
     padding: 2vh 30px 4vh 30px;
     overflow-wrap: anywhere;
+    text-align: start;
+
 }
 
 .skill-element h3{
