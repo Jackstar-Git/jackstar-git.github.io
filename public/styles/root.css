@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 :root {
     --text: #ffffff;
     --bg: #100E17;
@@ -12,8 +15,9 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: sans-serif;
+    font-family: 'Kanit', sans-serif;
     color: var(--text);
+    box-sizing: border-box;
 }
 
 html{
@@ -28,9 +32,11 @@ a{
     text-decoration: none;
 }
 
-p{
-    letter-spacing: -0rem;
+img, picture{
+    max-width: 100%;
+    display: block;
 }
+
 
 .hidden{
     display: none !important; 

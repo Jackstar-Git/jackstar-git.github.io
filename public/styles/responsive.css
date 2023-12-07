@@ -47,3 +47,15 @@
     }
 
 }
+
+
+
+
+@media (width < 900px) {
+    .footer-base{
+        flex-direction: column;
+    }
+    .footer-base div{
+        margin: 2% 0;
+    }
+  }

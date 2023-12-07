@@ -1,5 +1,40 @@
 @import url(root.css);
 
 footer{
-    background-color: var(--bg-third );
+
+    min-height: 10rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
+footer a{
+    display: block;
+}
+
+footer a:hover{
+    color: var(--primary);
+}
+
+.footer-base{
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo > img{
+    height: 70px;
+}
+
+.disclaimer{
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+
+
+
