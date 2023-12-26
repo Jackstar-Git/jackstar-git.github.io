@@ -22,7 +22,7 @@ header{
 
 #header-image{
     height: 12vw;
-    width: 12vw;
+    width: auto;
     max-height: 250px;
     min-height: 100px;
     margin-right: 8%;
