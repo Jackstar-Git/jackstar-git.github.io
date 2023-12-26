@@ -72,12 +72,13 @@ details[open] summary ~ * {
     align-items: center;
 }
 
-#logo{
+.logo{
     margin-right: 20px;
 }
 
 #nav-logo-img{
     height: 50px;
+    width: 50px;
 }
 
 .pc #nav-items{
