@@ -1,48 +1,98 @@
 @import url(root.css);
 
 #about-me{
-    text-align: center;
-    margin-top: 2vh;
-    font-size: 2rem;
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+        "header header"
+        "info long-text"
+        "timeline skills";
+
+    grid-template-columns: 2fr 3fr;
+    padding: 2% 3% 0% 3%;
+    row-gap: 4vh;
+
+    background-color: var(--bg-third);
 }
 
 
-#skill-div{
+#about-me > h2{
+    grid-area: header;
+}
+
+#about-me > div{
     display: flex;
-    padding: 5vh 5vw 5vh 5vw;
-    justify-content: space-between;
-    font-size: 1rem;
 }
 
-#skill-div hr{
-    border: 2px solid var(--primary);
+.info{
+    grid-area: info;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.skill{
-    flex: 1 1 0px;
-    padding-top: 2vh;
+.info > img{
+    border-radius: 50%;
+    width: 50%;
+    margin-bottom: 2vh;
+    justify-self: center
 }
 
-.skill h2{
-    align-self: center;
+.socials{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 12%;
+    margin-bottom: 5vh;
+}   
+
+.info  h2{
+    font-size: 2.3rem;
     text-decoration: underline;
     text-decoration-color: var(--primary);
     text-decoration-thickness: 5px;
-    text-decoration-skip-ink: none	;
-    padding-bottom: 3vh;
-    text-align: center;
-    font-size: 2.2rem;
+    text-decoration-skip-ink: none;
 }
 
-.skill-element{
-    font-size: 1.6rem;
-    padding: 2vh 30px 4vh 30px;
-    overflow-wrap: anywhere;
-    text-align: start;
-
+#about-me .long-text{
+    grid-area: long-text;
+    display: block;
+    font-size: 1.2rem;
 }
 
-.skill-element h3{
-    font-size: 1.7rem;
+.timeline{
+    grid-area: timeline;
+}
+
+.skills{
+    grid-area: skills;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 150%;
+}
+
+.skills > hr{
+    width: 100%;
+    margin-bottom: 5vh;
+    border-color: var(--primary);
+    border-width: 2px;
+}
+
+.skills > .skill > div{
+    color: gold;
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 1vh;
+}
+
+#about-svg{
+    display: block;
+    background-color: var(--bg-secondary);
+}
+
+#about-svg svg{
+    fill: var(--bg-third);
+    height: 50%;
 }
 

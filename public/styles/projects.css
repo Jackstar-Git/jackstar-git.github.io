@@ -10,16 +10,6 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 2vh;
-    font-size: 2rem;
-}
-
-#projects-text h1{
-    padding: 3vh;
-    text-decoration: underline;
-    text-decoration-color: var(--primary);
-    text-decoration-thickness: 5px;
-    text-decoration-skip-ink: none;
 }
 
 #projects-text p{

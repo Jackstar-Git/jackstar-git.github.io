@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="public/styles/responsive.css">
     <link rel="stylesheet" href="public/styles/projects.css">
     <link rel="stylesheet" href="public/styles/footer.css">
-    <title>Portfolio</title>
+    <title>Jackstar's Headquater</title>
+    <meta name="description" content="This is my small litte portfolio page!">
+    <link rel="icon" href="public/assets/images/Logo.webp">
+
+    <script type="module" src="public/scripts/index.js"></script>
 </head>
 <body>
     <nav>
@@ -63,73 +67,67 @@
     <div id="header-buttons">
         <a class="header-button" href="#projects">See Projects</a>
         <a class="header-button" href="#contact">Contact me</a>
-
     </div>
 
 </header>
+<div class="svg-container" id="header-svg">
+    <svg viewBox="0 0 800 70" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="800,0 0,0 0,70"/>
+        <polygon points="0,0 800,0 800,70"/>
+      </svg>
+</div>
 <section id="about-me">
-    <h1>About Me</h1>
-    <p>Hello, I'm <span class="highlight2">Jackstar</span>.</p>
+    <h2 class="section-title">About Me</h2>
+    <div class="info">
+        <img src="public/assets/images/Logo.webp" alt="Logo">
+        <div class="socials">
+            <a href="https://github.com/Jackstar-Git" target="_blank"><img src="public/assets/icons/Github-Light.svg" alt="Github Icon"></a>
+            <a href="https://discordapp.com/users/700285395589529702" target="_blank"><img src="public/assets/icons/Discord.svg" alt="Discord Logo"></a>
+        </div>
 
-    <div id="skill-div">
-        <hr>
+    </div>
+    <div class="long-text">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis sequi beatae mollitia, dignissimos odit dicta similique doloremque ratione consequuntur, distinctio voluptate tempore qui obcaecati eligendi saepe quos iusto illum facere.
+        Iste, fugit, unde aperiam cumque deserunt reprehenderit laboriosam, iure a delectus doloremque sint? Eum delectus dolore possimus a qui, magnam consectetur iste dolorum consequatur sit quae quasi corporis amet autem.
+        Tempore reiciendis dicta, neque quod sed voluptas fuga pariatur atque. Consectetur ducimus totam, perspiciatis dolorum, nesciunt sit architecto impedit quae id reprehenderit in voluptates eligendi. Minus iste repellendus fugit recusandae.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis sequi beatae mollitia, dignissimos odit dicta similique doloremque ratione consequuntur, distinctio voluptate tempore qui obcaecati eligendi saepe quos iusto illum facere.
+            Iste, fugit, unde aperiam cumque deserunt reprehenderit laboriosam, iure a delectus doloremque sint? Eum delectus dolore possimus a qui, magnam consectetur iste dolorum consequatur sit quae quasi corporis amet autem.
+            Tempore reiciendis dicta, neque quod sed voluptas fuga pariatur atque. Consectetur ducimus totam, perspiciatis dolorum, nesciunt sit architecto impedit quae id reprehenderit in voluptates eligendi. Minus iste repellendus fugit recusandae.
+        </p>
+    </div>
+    <div class="timeline"></div>
+    <div class="skills">
         <div class="skill">
-            <h2>Personal info</h2>
-            <div class="skill-element">
-                <h3>Name</h3>
-                <p>Jackstar</p>
-            </div>
-            <div class="skill-element">
-                <h3>Mail</h3>
-                <p><a href="mailto:jackstarhimself@gmail.com">jackstarhimself@gmail.com</a></p>
-            </div>
-            <div class="skill-element">
-                <h3>Timezone</h3>
-                <p>GMT+1</p>
-            </div>
-            <div class="skill-element">
-                <h3>Languages</h3>
-                <p>I speak German and English fluently. I also know some basic Spanish.</p>
-            </div>
+            <h3>Python (2.5 years)</h3>
+            <div>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</div>
         </div>
         <hr>
         <div class="skill">
-            <h2>My Skills</h2>
-            <div class="skill-element">
-                <h3>MongoDB</h3>
-                <p>MongoDB is a non SQL-Database to store large amounts of data.</p>
-            </div>
-            <div class="skill-element">
-                <h3>Libraries</h3>
-                <p>I know many Python libraries, including TKInter, Numpy, Pandas and many more...</p>
-            </div>
-            <div class="skill-element">
-                <h3>APIs</h3>
-                <p>Some APIs I'm familar with are the Discord, YouTube and Twitch Api.</p>
-            </div>
+            <h3>HTML (2.5 years)</h3>
+            <div>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</div>
         </div>
         <hr>
         <div class="skill">
-            <h2>Programming Languages</h2>
-            <div class="skill-element">
-                <h3>Python</h3>
-                <p>This is the  language I'm most familar with and that I use for most of my projetcs.</p>
-            </div>
-            <div class="skill-element">
-                <h3>HTML</h3>
-                <p>Create Static Webites</p>
-            </div>
-            <div class="skill-element">
-                <h3>CSS</h3>
-                <p>Format websites to look nicer</p>
-            </div>
+            <h3>CSS (2 years)</h3>
+            <div>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</div>
         </div>
         <hr>
+        <div class="skill">
+            <h3>JavaScript (0.5 years)</h3>
+            <div>★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆</div>
+        </div>
+
     </div>
 </section>
+<div class="svg-container"  id="about-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path d="M0,192L40,181.3C80,171,160,149,240,165.3C320,181,400,235,480,250.7C560,267,640,245,720,213.3C800,181,880,139,960,112C1040,85,1120,75,1200,96C1280,117,1360,171,1400,197.3L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+    </svg>
+</div>
 <section id="projects">
     <div id="projects-text">
-        <h1>Projects</h1>
+        <h2 class="section-title">Projects</h2>
         <p>Here you can see some of my best projects.</p>
     </div>
 
@@ -206,30 +204,6 @@
             </div>
             <input type="checkbox" class="expand-btn" aria-label="Read More">
         </div>
-        <div class="project_card">
-            <img src="public/assets/images/python-logo.webp" alt="">
-            <div class="project_card_content">
-                <h2 class="card_title">Libero rerum, quasi voluptatum in aspernatur numquam explicabo veniam perspiciatis impedit cupiditate sapiente nisi tenetur praesentium, necessitatibus facere, assumenda consequuntur sint ea temporibus. Eum mollitia, fugit illum autem voluptatibus reprehenderit?</h2>
-                <div class="card_description">Temporibus magnam quia enim accusantium sapiente quo eius hic neque dignissimos architecto! Esse, deleniti, repudiandae itaque iste cumque delectus tenetur voluptates unde distinctio et, atque blanditiis! Ipsum quibusdam placeat nisi.</div>
-            </div>
-            <input type="checkbox" class="expand-btn" aria-label="Read More">
-        </div>
-        <div class="project_card">
-            <img src="public/assets/images/python-logo.webp" alt="">
-            <div class="project_card_content">
-                <h2 class="card_title">Unde quia repudiandae ab, aliquid dolor officiis doloribus fugiat nulla commodi eligendi in iure corporis quo omnis aut eaque nam. Enim doloribus eligendi consequuntur impedit fuga laboriosam earum dicta! Soluta?</h2>
-                <div class="card_description">Iure labore dignissimos illum enim nobis? Officia atque facere, iure distinctio pariatur dicta ratione enim ipsa voluptas? Excepturi quis quam, qui porro quisquam pariatur optio dignissimos voluptatem expedita soluta provident.</div>
-            </div>
-            <input type="checkbox" class="expand-btn" aria-label="Read More">
-        </div>
-        <div class="project_card">
-            <img src="public/assets/images/python-logo.webp" alt="">
-            <div class="project_card_content">
-                <h2 class="card_title">Neque facilis dolor sed qui laborum eaque, maiores nisi numquam harum. Perspiciatis consequuntur odio, explicabo laudantium unde officiis nemo earum doloribus quasi sed sequi eveniet eius cupiditate eaque dolor culpa.</h2>
-                <div class="card_description">Sunt expedita quae quam hic adipisci vero perferendis quia ipsa voluptatum repellat cumque nobis, deserunt, nihil, harum labore iusto esse dolore voluptate. Earum, adipisci modi voluptate asperiores porro blanditiis sequi?</div>
-            </div>
-            <input type="checkbox" class="expand-btn" aria-label="Read More">
-        </div>
     </div>
 </section>
 
@@ -253,9 +227,8 @@
         </div>
     </div>
     <div class="disclaimer">
-        <h3> &#x00A9 Copyright owned by Jackstar - December 2023 &#x00A9</h3>
+        <h3> &#x00A9 Copyright owned by Jackstar - <span id="footer-date"></span> &#x00A9</h3>
     </div>
-
 </footer>
 
 
