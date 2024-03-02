@@ -70,8 +70,8 @@ header{
 }
 
 .header-button:hover{
-    color: var(--primary);
-    cursor: pointer;
+        color: var(--primary);
+        cursor: pointer;
 }
 .header-button:nth-of-type(2):hover{
     background-color: var(--bg-main);

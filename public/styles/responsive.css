@@ -3,6 +3,7 @@
 @media only screen and (max-width: 900px) {
     section#about-me{
         grid-template-areas: 
+            "header"
             "info"
             "long-text"
             "timeline"
@@ -60,3 +61,5 @@
         margin: 2% 0;
     }
   }
+
+

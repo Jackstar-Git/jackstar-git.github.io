@@ -41,6 +41,7 @@ details[open] summary ~ * {
     opacity: 0.9;
     padding-right: 10%;
     padding-bottom: 3vh;
+    z-index: 1;
 }
 
 

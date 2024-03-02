@@ -39,6 +39,10 @@ img, picture{
     display: block;
 }
 
+:hover{
+    cursor: pointer;
+}
+
 .section-title{
     font-size: 250%;
     text-align: center;
