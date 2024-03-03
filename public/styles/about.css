@@ -10,7 +10,7 @@
 
     grid-template-columns: 2fr 3fr;
     padding: 2% 3% 0% 3%;
-    row-gap: 4vh;
+    row-gap: 50px;
 
     background-color: var(--bg-third);
 }
@@ -26,6 +26,7 @@
 
 .info{
     grid-area: info;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -33,9 +34,8 @@
 
 .info > img{
     border-radius: 50%;
-    width: 50%;
+    height: 30vh;
     margin-bottom: 2vh;
-    justify-self: center
 }
 
 .socials{
@@ -43,7 +43,6 @@
     display: flex;
     justify-content: space-evenly;
     height: 12%;
-    margin-bottom: 5vh;
 }   
 
 .info  h2{
@@ -56,8 +55,11 @@
 
 #about-me .long-text{
     grid-area: long-text;
-    display: block;
     font-size: 1.2rem;
+}
+
+#about-me .long-text p{
+    padding: 10px;
 }
 
 .timeline{
@@ -66,24 +68,32 @@
 
 .skills{
     grid-area: skills;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 150%;
 }
 
-.skills > hr{
+.skills hr{
     width: 100%;
     margin-bottom: 5vh;
     border-color: var(--primary);
     border-width: 2px;
 }
 
-.skills > .skill > div{
+.skills  .skill  div{
     color: gold;
     font-size: 120%;
     font-weight: 700;
     margin-bottom: 1vh;
+}
+.skills .skill-heading{
+    margin-bottom: 3vh;
+    text-decoration: underline;
+    text-decoration-color: rgba(60,0,255,0.5);
+    text-underline-offset: -4px;
+    text-decoration-thickness: 8px;
+    text-decoration-skip-ink: none;
 }
 
 #about-svg{
@@ -96,3 +106,142 @@
     height: 50%;
 }
 
+
+.timeline {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+}
+
+.timeline-dot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    border-color: var(--primary);
+    border-style: solid;
+    border-width: 7px;
+    translate: -50%;
+}
+
+
+.timeline-item{
+    position: relative;
+    display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 30px;
+}
+
+.timeline-item .timeline-line{
+    height: 100%;
+    width: 0;
+    border-right: 5px solid var(--primary) ;
+    translate: -50%;
+
+}
+
+.timeline-item:last-child .timeline-line{
+    border-right: 7px dotted var(--secondary);
+    height: 50%;
+    align-self: flex-start;
+}
+
+.timeline-item .timeline-content{
+    position: relative;
+    top: -40px;
+    left: 10px;
+    width: 75%;
+    background-color: var(--bg-secondary);
+    border-color: var(--primary);
+    border-width: 1px;
+    border-style: solid;
+    padding: 2% 5%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.timeline-item .timeline-content::before{
+    --arrow-size: 20px;
+
+    top: 4%;
+    left: calc(var(--arrow-size) * -2);
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+
+    border: var(--arrow-size) solid transparent;
+    border-right: var(--arrow-size) solid var(--primary);
+}
+
+
+.timeline-item .timeline-content p{
+    color: white;
+}
+
+
+
+/**/
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+.carousel-item {
+  display: none;
+  transition: display 1s;
+}
+
+#carousel-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    gap: 40px;
+    margin-top: 3vh;
+    margin-right: 40px;
+    min-height: 30%;
+    width: 10%;
+}
+
+#carousel-buttons button{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    opacity: 75%;
+    border: none;
+    border-radius: 50%;
+    font-size: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#carousel-buttons button:hover{
+    opacity: 100%;
+}
+
+#carousel-buttons .indicator{
+    display: block;
+    margin-block: 30px;
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    transform: translateX(115%);
+}
+
+#carousel-buttons button{
+    rotate: 90deg;
+}
+
+#carousel-buttons .indicator:hover{
+    cursor: pointer;
+}
+
+#carousel-buttons .indicator.active-indicator{
+    background-color: var(--primary);
+    opacity: 1;
+}

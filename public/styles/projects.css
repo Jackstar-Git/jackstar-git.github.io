@@ -123,5 +123,13 @@
 }
 
 
+#projects-svg{
+    display: block;
+    background-color: var(--bg-third);
+}
 
+#projects-svg svg{
+    fill: var(--bg-secondary);
+    height: 50%;
+}
 

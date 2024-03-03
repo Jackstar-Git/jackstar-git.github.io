@@ -11,7 +11,3 @@ function textRemaining(textarea){
 const form_text_area = document.getElementById("text-area");
 form_text_area.addEventListener("keyup", () => textRemaining(form_text_area));
 
-function validate(event){
-    alert("Test")
-    console.log("Test");
-}

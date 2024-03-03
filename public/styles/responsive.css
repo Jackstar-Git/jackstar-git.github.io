@@ -6,8 +6,8 @@
             "header"
             "info"
             "long-text"
-            "timeline"
-            "skills";
+            "skills"
+            "timeline";
     
         grid-template-columns: 1fr;
     }

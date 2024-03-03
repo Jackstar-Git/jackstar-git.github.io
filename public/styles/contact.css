@@ -56,8 +56,17 @@
 
 
 #contact-form label[for="subject"]{
-    width: min(700px, 100%);
+    min-width: 65%;
 }
+
+#contact-form label[for="name"]{
+    min-width: 40%;
+}
+
+#contact-form label[for="email"]{
+    min-width: 40%;
+}
+
 
 #contact-form option:first-child{
     color: rgba(55, 55, 55, 0.5);
