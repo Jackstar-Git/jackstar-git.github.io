@@ -39,3 +39,8 @@ showSlide(currentIndex);
 document.getElementById('nextBtn').addEventListener('click', nextSlide);
 document.getElementById('prevBtn').addEventListener('click', previousSlide);
 
+slideIndicators.forEach((item, index) => {
+  item.addEventListener("click", (event) => showSlide(index));
+});
+
+

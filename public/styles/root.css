@@ -79,3 +79,29 @@ a:hover, button:hover{
     display: block;
 }
 
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-button{
+    background-color: rgb(48, 48, 48);
+}
+
+::-webkit-scrollbar-button:hover{
+    cursor: pointer;
+}
