@@ -142,15 +142,15 @@
 }
 
 .timeline-item:last-child .timeline-line{
-    border-right: 7px dotted var(--secondary);
-    height: 50%;
+    border-right: 7px dashed var(--primary);
+    height: 25%;
     align-self: flex-start;
 }
 
 .timeline-item .timeline-content{
     position: relative;
     top: -40px;
-    left: 10px;
+    left: -100%;
     width: 75%;
     background-color: var(--bg-secondary);
     border-color: var(--primary);
@@ -191,29 +191,35 @@
   }
   
 .carousel-item {
-  display: none;
-  transition: display 1s;
+  display: block;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
 }
 
-#carousel-buttons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-self: center;
-    gap: 40px;
-    margin-top: 3vh;
-    margin-right: 40px;
+
+#carousel-buttons{  
+    margin-top: 100px;
+    margin-right: 3%;
     min-height: 30%;
-    width: 10%;
+}
+
+#carousel-buttons > *{  
+    margin-inline: auto;
+}
+
+
+#carousel-buttons #slide-indicator{
+    width: 100%;
 }
 
 #carousel-buttons button{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    aspect-ratio: 1/1;
     background-color: var(--primary);
     opacity: 75%;
     border: none;
     border-radius: 50%;
+    rotate: 90deg;
     font-size: 100%;
     text-align: center;
     font-weight: bold;
@@ -225,17 +231,14 @@
 
 #carousel-buttons .indicator{
     display: block;
+    margin-inline: auto;
     margin-block: 30px;
     width: 15px;
     height: 15px;
     background-color: gray;
     border-radius: 50%;
-    transform: translateX(115%);
 }
 
-#carousel-buttons button{
-    rotate: 90deg;
-}
 
 #carousel-buttons .indicator:hover{
     cursor: pointer;
@@ -245,3 +248,23 @@
     background-color: var(--primary);
     opacity: 1;
 }
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.fade-in{
+    animation: fade-in 1.5s forwards ease-in-out;
+}
+
+
+@keyframes fly-in {
+    to {
+        left: 10px;
+    }
+}
+

@@ -8,17 +8,21 @@ let currentIndex = 0;
 
 function showSlide(index) {
   carouselItems.forEach(item => {
-    item.style.display = 'none';
+    item.style.display =  "none";
+    carouselItems[index].classList.remove("fade-in")
   });
 
   carouselItems[index].style.display = 'block';
+  carouselItems[index].classList.add("fade-in")
 
   slideIndicators.forEach(item => {
     item.classList.remove("active-indicator");
   });
   slideIndicators[index].classList.add("active-indicator")
-
 }
+
+
+
 
 function nextSlide() {
   currentIndex = (currentIndex + 1) % carouselItems.length;
