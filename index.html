@@ -16,13 +16,18 @@
     <title>Jackstar's Headquater</title>
     <meta name="description" content="This is my small litte portfolio page!">
     <link rel="icon" href="public/assets/images/Logo.webp">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'>
 
 
 
 
 </head>
 <body>
+    <div class="cookie-banner">
+        <p>We use cookies to enhance your experience on our website. By continuing to browse this site, you consent to the use of cookies as described in our <a href="#">Cookie Policy</a>.</p>
+        <button id="accept-btn">Accept</button>
+        <a href="#" id="learn-more">Learn More</a>
+    </div>
     <nav>
         <div class="pc nav-base">
             <div id="nav-logo">
@@ -36,7 +41,9 @@
                 <h1 class="nav-item"><a href="#about-me">About me</a></h1>
                 <h1 class="nav-item"><a href="#projects">Projects</a></h1>
                 <h1 class="nav-item"><a href="">Contact</a></h1>
+
             </div>
+            <button class="toggleButton"><i class="fa-solid fa-moon"></i></button>
         </div>
         <div class="mobile nav-base">
                 
@@ -50,13 +57,14 @@
                 <summary>
                     <img id="hamburger-menu-icon" src="public/assets/images/hamburger-menu.webp" alt="hamburger-menu">
                 </summary>
-                    <div id="mobile-nav-items">
-                        <h1 class="nav-item"> <a href="#">Home</a></h1>
-                        <h1 class="nav-item"><a href="#about-me">About me</a></h1>
-                        <h1 class="nav-item"><a href="#projects">Projects</a></h1>
-                        <h1 class="nav-item"><a href="">Contact</a></h1>
-                    </div>
-
+                <div id="mobile-nav-items">
+                    <h1 class="nav-item"> <a href="#">Home</a></h1>
+                    <h1 class="nav-item"><a href="#about-me">About me</a></h1>
+                    <h1 class="nav-item"><a href="#projects">Projects</a></h1>
+                    <h1 class="nav-item"><a href="">Contact</a></h1>
+                    <button class="toggleButton"><i class="fa-solid fa-moon"></i></button>
+                </div>
+                
             </details>
         </div>
     </nav>
@@ -355,8 +363,8 @@
 </footer>
 <div class="share-buttons">
     <button class="share-btn" alt="share-button">
-      <i class="fas fa-share-alt"></i>
-    </button>
+        <i class="fas fa-share-alt"></i>
+      </button>
     <div class="share-options">
       <p class="title_share">Share</p>
       <div class="social-media">
@@ -387,4 +395,5 @@
 <script type="module" src="public/scripts/about.js"></script>
 <script type="module" src="public/scripts/carousel.js"></script>
 <script type="module" src="public/scripts/submit.js"></script>
+<script type="module" src="public/scripts/lightmode.js"></script>
 </html>

@@ -177,7 +177,7 @@
 
 
 .timeline-item .timeline-content p{
-    color: white;
+    color: var(--text);
 }
 
 
@@ -264,7 +264,7 @@
 
 @keyframes fly-in {
     to {
-        left: 10px;
+        translate: 135%;
     }
 }
 

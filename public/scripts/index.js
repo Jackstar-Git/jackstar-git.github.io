@@ -7,6 +7,10 @@ document.getElementById("footer-date").innerHTML = "" + months[today.getMonth()]
 
 
 
+
+
+
+
 const shareBtn = document.querySelector('.share-btn');
 const shareOptions = document.querySelector('.share-options');
 

@@ -8,7 +8,19 @@ nav{
 }
 
 
+.toggleButton{
+    margin-left: 50px;
+    background-color: transparent;
+    aspect-ratio: 1 / 1;
+    width: 50px;
+    font-size: 35px;
+    border: none;
+    border-radius: 50%;
+}
 
+.toggleButton > i{
+    color: var(--text);
+}
 
 .mobile{
     display: none;
@@ -34,23 +46,23 @@ details[open] summary ~ * {
 #mobile-nav-items{
     position: absolute;
     text-align: end;
-    gap: 1rem;
     background-color: var(--bg);
     left: 0;
     right: 0;
     opacity: 0.9;
     padding-right: 10%;
-    padding-bottom: 3vh;
+    padding-bottom: 30px;
     z-index: 1;
 }
 
 
 #hamburger-menu-icon{
     width: 70px;
+    transition: rotate 0.3s;
 }
 
-#hamburger-menu-icon:hover{
-    animation: rotate-menu .3s;
+#hamburger-menu-icon:focus{
+    rotate: 90deg;
 }
 
 .pc{
@@ -61,12 +73,13 @@ details[open] summary ~ * {
     justify-content: space-between;
     align-items: center;
     min-height: 70px;
-    width: 80%;
+    width: 90%;
     animation-name: fade-in;
     animation-duration: 1.5s;
 }
 
 #nav-logo{
+    margin-right: auto;
     font-size: 1.5rem;
     display: inline-flex;
     justify-content: flex-start;
@@ -96,11 +109,6 @@ details[open] summary ~ * {
 .nav-base a:hover{
     color: var(--primary);
     transition: color 0.3s;   
-}
-
-@keyframes rotate-menu {
-    0%{rotate: 0deg;}
-    100%{rotate: 90deg;}
 }
 
 @keyframes sweep {
