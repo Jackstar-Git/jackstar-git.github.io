@@ -18,11 +18,8 @@ function toggleMode(button){
     setButtonText(button);
 }
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem("darkMode") === null) {
+if (localStorage.getItem("darkMode") === null) {
     localStorage.setItem("darkMode", "true");
-}
-else if (localStorage.getItem("darkMode") === null){
-  localStorage.setItem("darkMode", "false");
 }
   
 if (localStorage.getItem("darkMode") != "true"){
