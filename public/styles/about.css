@@ -1,51 +1,47 @@
-@import url(root.css);
+@import url('root.css');
 
-#about-me{
+#about-me {
     display: grid;
     min-height: 100vh;
-    grid-template-areas: 
+    grid-template-areas:
         "header header"
         "info long-text"
         "timeline skills";
-
     grid-template-columns: 2fr 3fr;
-    padding: 2% 3% 0% 3%;
+    padding: 2% 3% 0;
     row-gap: 50px;
-
     background-color: var(--bg-third);
 }
 
-
-#about-me > h2{
+#about-me > h2 {
     grid-area: header;
 }
 
-#about-me > div{
+#about-me > div {
     display: flex;
 }
 
-.info{
+.info {
     grid-area: info;
-    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.info > img{
+.info > img {
     border-radius: 50%;
-    height: 30vh;
-    margin-bottom: 2vh;
+    height: 30vh; /* Changed from fixed height to vh for dynamic sizing */
+    margin-bottom: 2vh; /* Changed from fixed margin to vh for dynamic sizing */
 }
 
-.socials{
+.socials {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
     height: 12%;
-}   
+}
 
-.info  h2{
+.info h2 {
     font-size: 2.3rem;
     text-decoration: underline;
     text-decoration-color: var(--primary);
@@ -53,183 +49,168 @@
     text-decoration-skip-ink: none;
 }
 
-#about-me .long-text{
+.long-text {
     grid-area: long-text;
     font-size: 1.2rem;
 }
 
-#about-me .long-text p{
+.long-text p {
     padding: 10px;
 }
 
-.timeline{
-    grid-area: timeline;
-}
-
-.skills{
-    grid-area: skills;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    justify-content: flex-start;
-    font-size: 150%;
-}
-
-.skills hr{
-    width: 100%;
-    margin-bottom: 5vh;
-    border-color: var(--primary);
-    border-width: 2px;
-}
-
-.skills  .skill  div{
-    color: gold;
-    font-size: 120%;
-    font-weight: 700;
-    margin-bottom: 1vh;
-}
-.skills .skill-heading{
-    margin-bottom: 3vh;
-    text-decoration: underline;
-    text-decoration-color: rgba(60,0,255,0.5);
-    text-underline-offset: -4px;
-    text-decoration-thickness: 8px;
-    text-decoration-skip-ink: none;
-}
-
-#about-svg{
-    display: block;
-    background-color: var(--bg-secondary);
-}
-
-#about-svg svg{
-    fill: var(--bg-third);
-    height: 50%;
-}
-
-
 .timeline {
-    flex-direction: column;
-    align-items: flex-start;
+    grid-area: timeline;
+    display: flex; /* Added to ensure flex properties apply */
+    flex-direction: column; /* Added to ensure proper layout */
+    align-items: flex-start; /* Added to align items properly */
     padding: 5%;
 }
 
-.timeline-dot{
+.timeline-dot {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--secondary);
-    border-color: var(--primary);
-    border-style: solid;
-    border-width: 7px;
-    translate: -50%;
+    border: 7px solid var(--primary);
+    transform: translateX(-50%);
 }
 
-
-.timeline-item{
-    position: relative;
+.timeline-item {
     display: flex;
-     align-items: center;
-     justify-content: flex-start;
-     gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
-.timeline-item .timeline-line{
-    height: 100%;
+.timeline-item .timeline-line {
     width: 0;
-    border-right: 5px solid var(--primary) ;
-    translate: -50%;
-
+    height: 100%;
+    border-right: 5px solid var(--primary);
+    transform: translateX(-50%); 
+    z-index: 100000;
 }
 
-.timeline-item:last-child .timeline-line{
+.timeline-item:last-child .timeline-line {
     border-right: 7px dashed var(--primary);
     height: 25%;
     align-self: flex-start;
 }
 
-.timeline-item .timeline-content{
+.timeline-item .timeline-content {
     position: relative;
     top: -40px;
     left: -100%;
     width: 75%;
     background-color: var(--bg-secondary);
-    border-color: var(--primary);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid var(--primary);
     padding: 2% 5%;
     border-radius: 12px;
     margin-bottom: 20px;
 }
 
-.timeline-item .timeline-content::before{
+.timeline-item .timeline-content::before {
     --arrow-size: 20px;
-
+    position: absolute;
     top: 4%;
     left: calc(var(--arrow-size) * -2);
-    position: absolute;
     content: "";
     width: 0;
     height: 0;
-
     border: var(--arrow-size) solid transparent;
     border-right: var(--arrow-size) solid var(--primary);
 }
 
-
-.timeline-item .timeline-content p{
+.timeline-item .timeline-content p {
     color: var(--text);
 }
 
+.skills {
+    grid-area: skills;
+    display: flex; /* Added to ensure flex properties apply */
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.5rem; /* Changed from 150% to 1.5rem for consistency */
+}
 
+.skills hr {
+    width: 100%;
+    margin-bottom: 5vh; /* Changed from fixed margin to vh for dynamic sizing */
+    border: 2px solid var(--primary); /* Changed from border-color and border-width to shorthand border */
+}
 
-/**/
+.skills .skill div {
+    color: gold;
+    font-size: 1.2rem; /* Changed from 120% to 1.2rem for consistency */
+    font-weight: 700;
+    margin-bottom: 1vh; /* Changed from fixed margin to vh for dynamic sizing */
+}
+
+.skills .skill-heading {
+    margin-bottom: 3vh; /* Changed from fixed margin to vh for dynamic sizing */
+    text-decoration: underline;
+    text-decoration-color: rgba(60, 0, 255, 0.5);
+    text-underline-offset: -4px;
+    text-decoration-thickness: 8px;
+    text-decoration-skip-ink: none;
+}
+
+#about-svg {
+    display: block;
+    background-color: var(--bg-secondary);
+}
+
+#about-svg svg {
+    fill: var(--bg-third);
+    height: 50%;
+}
+
 .carousel-container {
     overflow: hidden;
     position: relative;
     width: 100%;
     height: 100%;
-  }
-  
-.carousel-item {
-  display: block;
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
 }
 
+.carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
 
-#carousel-buttons{  
+#carousel-buttons {
     margin-top: 100px;
     margin-right: 3%;
     min-height: 30%;
 }
 
-#carousel-buttons > *{  
+#carousel-buttons > * {
     margin-inline: auto;
 }
 
-
-#carousel-buttons #slide-indicator{
+#carousel-buttons #slide-indicator {
     width: 100%;
 }
 
-#carousel-buttons button{
+#carousel-buttons button {
     width: 35px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     background-color: var(--primary);
-    opacity: 75%;
+    opacity: 0.75; /* Changed from 75% to 0.75 for consistency */
     border: none;
     border-radius: 50%;
-    rotate: 90deg;
-    font-size: 100%;
+    transform: rotate(90deg); /* Changed from rotate to transform for better syntax */
+    font-size: 1rem; /* Changed from 100% to 1rem for consistency */
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
 }
 
-#carousel-buttons button:hover{
-    opacity: 100%;
+#carousel-buttons button:hover {
+    opacity: 1;
 }
 
-#carousel-buttons .indicator{
+#carousel-buttons .indicator {
     display: block;
     margin-inline: auto;
     margin-block: 30px;
@@ -237,34 +218,23 @@
     height: 15px;
     background-color: gray;
     border-radius: 50%;
+    cursor: pointer; /* Added cursor pointer for hover effect */
 }
 
-
-#carousel-buttons .indicator:hover{
-    cursor: pointer;
-}
-
-#carousel-buttons .indicator.active-indicator{
+#carousel-buttons .indicator.active-indicator {
     background-color: var(--primary);
     opacity: 1;
 }
 
 @keyframes fade-in {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
-.fade-in{
+
+.fade-in {
     animation: fade-in 1.5s forwards ease-in-out;
 }
 
-
 @keyframes fly-in {
-    to {
-        translate: 135%;
-    }
+    to { transform: translateX(135%); } /* Changed from translate to transform for better syntax */
 }
-

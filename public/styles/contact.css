@@ -43,6 +43,9 @@
     font-weight: 100;
 }
 
+#type option{
+    font-weight: 100;
+}
 
 
 #contact-form label[for="subject"]{
