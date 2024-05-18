@@ -1,49 +1,44 @@
-@import url(root.css);
+@import url("root.css");
 
-nav{
+nav {
     display: flex;
     width: 100%;
     justify-content: center;
     background-color: var(--bg);
 }
 
-
-.toggleButton{
+.toggleButton {
     margin-left: 50px;
     background-color: transparent;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     width: 50px;
     font-size: 35px;
     border: none;
     border-radius: 50%;
 }
 
-.toggleButton > i{
+.toggleButton>i {
     color: var(--text);
 }
 
-.mobile{
+.mobile {
     display: none;
 }
 
-
-#hamburger-menu > summary{
+#hamburger-menu>summary {
     list-style: none;
     cursor: pointer;
 }
 
-details[open] #hamburger-menu-icon{
+details[open] #hamburger-menu-icon {
     rotate: 90deg;
 }
 
-
-details[open] summary ~ * {
+details[open] summary~* {
     animation: sweep 1s ease-in-out;
-  }
-  
-  
+}
 
-#mobile-nav-items{
+#mobile-nav-items {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -58,23 +53,24 @@ details[open] summary ~ * {
     z-index: 1;
 }
 
-#mobile-nav-items > *{
+#mobile-nav-items>* {
     width: fit-content;
 }
-#hamburger-menu-icon{
+
+#hamburger-menu-icon {
     width: 70px;
     transition: rotate 0.3s;
 }
 
-#hamburger-menu-icon:focus{
+#hamburger-menu-icon:focus {
     rotate: 90deg;
 }
 
-.pc{
+.pc {
     display: flex;
 }
 
-.nav-base{
+.nav-base {
     justify-content: space-between;
     align-items: center;
     min-height: 70px;
@@ -83,7 +79,7 @@ details[open] summary ~ * {
     animation-duration: 1.5s;
 }
 
-#nav-logo{
+#nav-logo {
     margin-right: auto;
     font-size: 1.5rem;
     display: inline-flex;
@@ -91,49 +87,57 @@ details[open] summary ~ * {
     align-items: center;
 }
 
-.logo{
+.logo {
     margin-right: 20px;
 }
 
-#nav-logo-img{
+#nav-logo-img {
     height: 50px;
     width: 50px;
 }
 
-.pc #nav-items{
+.pc #nav-items {
     display: flex;
     justify-content: space-evenly;
     gap: 2.75rem;
 }
 
-.nav-item{
+.nav-item {
     font-size: 1.35rem;
-    font-weight: bold;
+    font-weight: 700;
     position: relative;
 }
 
-.nav-item:hover::after, .nav-item:focus::after {
+.nav-item:focus::after,
+.nav-item:hover::after {
     width: 100%;
 }
+
 .nav-item::after {
     content: '';
     display: block;
     width: 0;
     height: 3px;
-    background: #00aaff;
+    background: #0af;
     transition: 0.75s;
     position: absolute;
     bottom: -3px;
     left: 0;
 }
 
-
-.nav-item:hover{
+.nav-item:hover {
     color: var(--primary);
-    transition: color 0.3s;   
+    transition: color 0.3s;
 }
 
 @keyframes sweep {
-    0%    {opacity: 0; transform: translateY(-50px);}
-    100%  {opacity: 0.9; transform: translateY(0);}
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+}

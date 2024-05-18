@@ -55,23 +55,37 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
-.header-button:first-of-type {
+.header-button::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: width 1s;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skewX(-45deg) translateX(-40px);
+    pointer-events: none;
+}
+
+.header-button:hover::after, .header-button:focus::after {
+    width: 130%;
+}
+
+
+.header-button:first-of-type, .header-button:nth-of-type(2)::after{
     background-color: var(--bg-main);
 }
 
-.header-button:nth-of-type(2) {
+.header-button:nth-of-type(2), .header-button:first-of-type::after{
     background-color: var(--primary);
 }
 
-.header-button:hover {
-    color: var(--primary);
-}
-
-.header-button:nth-of-type(2):hover {
-    background-color: var(--bg-main);
-}
 
 @keyframes wave {
     0%, 100% {
